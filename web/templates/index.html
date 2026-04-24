@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt_br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/index.css">
+    <title>Sistemas de numeração</title>
+</head>
+<body>
+    <header>
+        <h1>Aritimética Computacional</h1>
+        <p>Ferramenta de estudos de sistemas de numeração</p>
+    </header>
+    <main>
+        
+        <!-- conversor -->
+
+        <div class="number-basic">
+                <h2>Conversão de Base Númerica</h2>
+                <hr style="background-color: #324154; height: 4px; border: none; border-radius: 5px;">
+
+                <div class="select-area">
+
+                    <div class="select-container">
+                        <label for="number" class="label-select-container">Número</label>
+                        <input type="text" placeholder="Ex: 44, 1100, 4A" class="input-text">
+                    </div>
+
+                    <div class="select-container">
+                        <label for="base-one" class="label-select-container">Da Base</label>
+                        <select name="base-one" id="" class="select-default">
+                            <option value="">Binário</option>
+                            <option value="">Octal</option>
+                            <option value="">Hexadecimal</option>
+                            <option value="">Decimal</option>
+                        </select>
+                    </div>
+
+                    <div class="select-container">
+                        <label for="base-two" class="label-select-container">Para Base</label>
+                        <select name="base-two" id="" class="select-default">
+                            <option value="">Binário</option>
+                            <option value="">Octal</option>
+                            <option value="">Hexadecimal</option>
+                            <option value="">Decimal</option>
+                        </select>
+                    </div>
+
+                    <button class="finally-button">Converter</button>
+                </div>
+
+                <div class="wrapper">
+                    <textarea name="" id="" class="details" readonly ></textarea>
+                    <label id="text-area-mensage">Detalhes da converção</label>
+                </div>
+                
+        </div>
+
+        <!-- calculadora -->
+
+        <div class="calc-area">
+            <div class="calculator">
+                <h2>Calculadora binária</h2>
+
+                <hr style="background-color: #324154; height: 4px; border: none; border-radius: 5px;">
+
+                <div class="sub-container-calc">
+                    <div class="calc-input-container">
+                        <label for="value-A" class="label-select-container">Valor A</label>
+                        <input type="text" name="value-A" placeholder="EX: 1101" class="input-text">
+                    </div>
+
+                    <div class="calc-input-container">
+                        <label for="value-B" class="label-select-container">Valor B</label>
+                        <input type="text" placeholder="EX: 0101" class="input-text">
+                    </div>
+                </div>
+
+                <div class="aritmetricals-buttons">
+                    <button class="aritmetical-button">Adição</button>
+                    <button class="aritmetical-button">Subtração</button>
+                    <button class="aritmetical-button">Multiplicação</button>
+                    <button class="aritmetical-button">Divisão</button>
+                </div>
+
+                <button class="finally-button">Calcular</button>
+            </div>
+            <div class="details-op">
+                <h2>Detalhamento da operação</h2>
+                <hr>
+                <textarea name="" id="" class="details" placeholder="Esquema gráfico da operação" readonly></textarea>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; Direitos reservados a F. Alessandro S. Soares - Mecatrônica Industrial, IFCE</p>
+    </footer>
+</body>
+</html>

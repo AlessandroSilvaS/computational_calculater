@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #0f1729;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* header */
+header{
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+header h1{
+    color: #3b82f5;
+}
+header p{
+    color: #87868f;
+}
+/* main */
+main{
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+main .number-basic{
+    width: 100%;
+    min-height: 2rem;
+    border: solid 2px #324154;
+    border-radius: 10px;
+    background-color: #1e293b;
+    padding: 10px;
+} 
+main .number-basic h2{
+    font-size: 26px;
+    color: #f8faeb;
+    margin: 10px;
+}
+main .number-basic .select-area{
+    width: 60%;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+main .number-basic .select-area .select-container{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+main .label-select-container{
+    font-size: 16px;
+    color: #f8faeb;
+    color: #87868f;
+}
+main .input-text, .select-default{
+    background-color: #0f1729;
+    border: 1px solid #324154;
+    border-radius: 5px;
+    height: 40px;
+    padding-left: 5px;
+    color: #f8faeb;
+    transition: border 0.3s;
+}
+main .input-text:focus, .select-default:focus{
+    border-color: #3b82f5;
+    outline: none;
+    box-shadow: none;
+}
+main .finally-button{
+    width: 100px;
+    height: 40px;
+    background-color: #3b82f5;
+    color: #f8faeb;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.4s;
+}
+main .finally-button:hover{
+    background-color: #1e74ff;
+}
+main .number-basic .wrapper{
+    position: relative;
+}
+main .number-basic .wrapper .details{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    background-color: #18212f;
+    border: none;
+    cursor: default;
+    text-align: center;
+    resize: none;
+}
+main .number-basic .wrapper #text-area-mensage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    color: #999;
+}
+/* calculadora */
+main .calc-area{
+    width: 100%;
+    height: 50%;
+    border: solid 2px #324154;
+    border-radius: 10px;
+    background-color: #1e293b;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+main .calc-area .calculator{
+    width: 30%;
+}
+main .calc-area .calculator h2{
+    font-size: 26px;
+    color: #f8faeb;
+    margin: 5px;
+}
+main .calc-area .calculator .sub-container-calc .calc-input-container{
+    display: flex;
+    flex-direction: column;
+}
+main .calc-area .calculator .aritmetricals-buttons{
+    display: grid;
+    grid-template-columns: repeat(2, 48%);
+    gap: 10px;
+    padding: 5px;
+}
+main .calc-area .calculator .aritmetricals-buttons .aritmetical-button{
+    border: 2px solid #1e74ff;
+    border-radius: 5px;
+    color: #1e74ff;
+    background-color: transparent;
+    cursor: pointer
+}
